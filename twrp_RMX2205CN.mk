@@ -16,7 +16,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/realme/RMX2205CN/device.mk)
 
 PRODUCT_DEVICE := RMX2205CN
-PRODUCT_NAME := omni_RMX2205CN
+PRODUCT_NAME := twrp_RMX2205CN
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2205
 PRODUCT_MANUFACTURER := realme
