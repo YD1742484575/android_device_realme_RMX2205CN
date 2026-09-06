@@ -160,9 +160,9 @@ service fastbootd /system/bin/fastbootd
 on property:service.adb.root=1
     restart adbd
 
-# Always start adbd + MTP on userdebug and eng builds
+# Always start adbd on userdebug and eng builds
 on fs && property:ro.debuggable=1
-    setprop sys.usb.config mtp,adb
+    setprop sys.usb.config adb
 
 on fs && property:sys.usb.configfs=1
     mount configfs none /config
